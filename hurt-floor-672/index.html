@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .main {
+            background-color: peru;
+        }
+
+        .main>.nav {
+            display: flex;
+            justify-content: space-around
+        }
+
+        .nav>.nav1 {
+            display: flex;
+
+
+        }
+
+        .nav1>button {
+            width: 60px;
+            height: 40px;
+            margin-top: 25px;
+        }
+
+        .nav>.nav2 {
+            display: flex;
+
+        }
+
+        .nav>.nav3 {
+            display: flex;
+
+        }
+
+        .nav3>button {
+            width: 120px;
+            height: 60px;
+            font-size: 20px;
+            border-color: aqua;
+            background-color: blue;
+        }
+
+        .main>.upper1 {
+            display: flex;
+        }
+
+        .uppart1>input {
+            height: 30px;
+            width: 400px;
+        }
+
+        .uppart1>div>button {
+            height: 50px;
+            width: 150px;
+            background-color: blue;
+            color: aliceblue;
+            font-size: 20px;
+        }
+
+        .uppart1>div {
+            display: flex;
+
+        }
+
+        .uppart1>div>p {
+            margin-left: 20px;
+
+        }
+
+        .uppart1>h1 {
+            font-size: 70px;
+        }
+
+        /********day-3*******/
+        .upper2 {
+            display: flex;
+            justify-content: space-evenly;
+            margin-top: 25px;
+            box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+
+        }
+
+        .upper2>img:nth-child(7) {
+            width: 15%;
+        }
+
+        .upper3>h1 {
+            margin-top: 100px;
+            font-size: 50px;
+            text-align: center;
+            color: rgba(0, 0, 0, 0.836)
+        }
+
+        .upper4>div {
+            display: flex;
+        }
+
+        .part2>div {
+            display: flex;
+            margin-left: 20px;
+            margin-top: 15px;
+            box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+            width: 250px;
+            justify-content: space-evenly;
+            width: 300px;
+        }
+
+        /* ****** day-4*********** */
+
+        .upper5{
+            display: flex;
+            justify-content: space-evenly;
+        }
+        .upper5>div>h1{
+            font-size: 55px;
+        }
+        .upper5>div>.btn{
+            background-color: blue;
+            margin-left: 50px;
+            width: 200px;
+            height: 40px;
+            font-size: 20px;
+            color: aliceblue;
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <div class="main">
+        <div class="nav">
+            <div class="nav1">
+                <img
+                    src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBwgHBgkIBwgKCgkLDRYPDQwMDRsUFRAWIB0iIiAdHx8kKDQsJCYxJx8fLT0tMTU3Ojo6Iys/RD84QzQ5OjcBCgoKDQwNGg8PGjclHyU3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3N//AABEIAIEAgQMBIgACEQEDEQH/xAAbAAEAAgMBAQAAAAAAAAAAAAAABgcDBAUBAv/EAD4QAAEDAwMBBQYDBQcFAQAAAAECAwQABREGEiExBxMiQVEUFTJhcYEjQoIzYnKRoiRDUlNzkqEWY7HB8Qj/xAAVAQEBAAAAAAAAAAAAAAAAAAAAAf/EABQRAQAAAAAAAAAAAAAAAAAAAAD/2gAMAwEAAhEDEQA/ALxpSlApSlApSlApSlApSlApSlApSlApSlApSlApSlApSvCcUHtca/antFgKEXGWBId/ZRWklx5z+FCck/yqKai1o/P3x9PSkRrehzuXrt3feqdc/wAqK2P2rnz5ArjWS2rh3hmJIcftbN8ZU5FuCHEPSpDgTyh5/nBIwsJRgdRu4xQSK464uLKQ4q3QrNHX8Dt9mhpxf8LKAVH6Eg1r27UVzlSiJF7ccIQXO6g6feQ2QOuHHM5HTn51IrNp+LCcbktQWIzr0ctTEJG4uKz8W88n83JOSFDPStxUaHCTBTKkYWlowm1uEDvN23gn1OwY+dBGomoLtcIEK4xLghhucyH2o71ldkbAR03NrGcZHOK+o+r7qHy0mHbLuUjK0W2aESEj17h0A/1V2dM2I2m02eO8vL1viGP4TlJ3bcn+kfzr2Rp+PIjwY09lqbFiMq3IebClOOYGFc9PzfcigWXV1ou8kw2nlxp6eVQZjZYfH6FdfqMiu9kVU96s78yfBsLSfeL4jGdKhzHs+xAEbUtP4K21EnAySMJ8s1s2DV8mzIInvyJ9nbCe9ckJ/ttuCvhLwHDjZ8nU8H50Fn0rHHfbksoeYcQ404kKQtCshQPQg1koFKUoFKUoFKUoFV3r+/e2vyLHHcdRAYSn3m9H/auqXw3Ea/7jnn6A1LNWXj3DYZc9DfevISER2f8ANdUdqE/dRFVjYLRdBPeehNxNQRrW+tEuK+4lC35a0Dv3kHGCQSUDf+8ARQSvTdhkR5LT8hpES8RkAMRwjdFZik8tNEef+JXxbsEgpwDoa91Tpq0pbs7MVN0untiH48Nl3AZkbwUkrB8HiOdo58R6A5qc2RSXLY1tZlsp5Hczc943ycpJOcgeRycjzNRmf2Zaec07cLVBhojOSsrTKOVuIcySk5PO0E/D6Z9aDBqyDfrv2WzBdQmNem2TIUmCtWMoO7b9SkYxk8+tcbXl2TqDsTbvSVELIjOr2HlKw6lCsenOa7/ZtqKRdIUqx34bb5aldxKQvq6jolz55HB9eD+YVBC17t0j2g6Ndzi2r9rigj+5UUrAH0wD+qoO1a+0K7abYFm1Ra5lwumxJgOw0b/b2yOD9R5kD7Z65NJ6h1Tq7Wrsa4oTa7ba/wASTEY5Kl/kQtfUnOSQMDw4IqQSNSMWHswiX5exTjdtaDG7nc4pCQkeuM4z8hVeurudl0q3pSyNvSNU3xC59zU3ytpChkg+iinA+5xypNBM7BqbSd61ZfrTGbKJc1SUrkFw4nBCAkpSfIAA4A6jJHnXT1RZXJUluWw6UXVJ7m2dw3lCEYysPeSm1fmB4A2hPi6xix6e03rPs/gxdPlUC4Wv9k4o4fjSAcnfjGQojP8ALGCMCewlT4Wlkq1DJ3zWYxMp6E2okkDkpGCSrHoOT0A6UEH0jeDpu4ewPNGNaX5RjvRVKz7qlnkJB82XPiQfn9atIdKpq9squET389bk2vTakJhSWluAyZTKl/tVg5CVIX4+cr+PJFWBoK5SZloXBuTocuVreMOSsf3m3BQ59FIKVfc1RJqUpQKUpQKUpQQHtKuBjS4ThSFM2uNIuq0nop1sBDCT+tzP6a7Gj7L7stMCPIahvuRWQEzGyS4tR5XnOepJJ8Rz6VGu0AqVeZKSE7X3bTDQXFEJOZLq15+RATn6VOLP3KUubWbey8o5WmE4FBXzPhBoOkBiuHc9XaftVzFtul2jRJRSF7H1bBtPQ7jx5etd2uFqfSll1QwGbvEDi0D8N5B2uN/RQ/8AB4+VBFe0K3vQZcTXum8PyYKQmW20cplRvPp1wPP0wfyis+q9Pwbpabvqtn21qXJ0+6z3ChsBTsUobkEZ3dB18hUYk9nerNIOqlaHvLz7AOTEWpKVH9J/DWfsDWxae1KWZHuHW1gkNypH4BEdpSVObvCB3ajnnOMpJznyqDu6ZtcbUXZXYkuw2Zb8aMh2K28tSUd83kJ3EeWRg/LNavY82Ab7KvDEpGo/aiLk9Jb2gDqlKVdNuOcZ9D02165rez6WjjTWmrDcXrhGUptu2BpX4ZJ3ZUo7spO7ORnr5CsKdI6p1mpLutLmq3wFeI2qDgZ6cLVzn77vtQZp+ttM2W7TGdJWz3xfZ6wp9NvTkLUOMqWM8Dz255JJxkmskbSupNWOIla6nmLByFJs0BZSn6OrBOfpk/UVMtP6ctOnYvs1mhNRkH4lAZWv5qUeT966tUcGbY4jcNEWDbICWO4VGKnfCllojBCQBznJ4yPrUM7O3nIl9iNuOhzv4r1ukqByFvw17UL+ZU0r+mrCvCWXImx5mG+dwKW5awlBI884PT6VXdubdVq2cpsMb4V/jSD3B3p2vxe6UAeOORzjyoLTpXgr2gUpSgUpSgq3tFDc25yI06K3JRCnW2Q2h3GFNOrLa058gSnB+tTewWC3WtKlxrJbbc+evsiQSR81bUmor2m29b9xbQyMKu1ufgoWOCJDeHmBn6pc/nUi0bOauFmi3GLCYiRpjSXE4cBccURznH38yfXFBI6xbSOtZc5rRvV2gWW3Oz7nJRHjNDKlq8z6AeZPkByaDmW/VFrvMSY7p+Q3c3oxUDGZcSlwqBxjxEYBPRXT51HLjpTVGqHWJl4uzFpMVYegxYTQdLLg+FS1n4j8hxUZhacuWvL69qi0tDTEQJIhyWkYflK/zFAEDHr6jjnrUk1QvUzHZfckXGdAdusZtXtbrGUnus9RjGHCnB6Ac9Kg1ZHZjeXJSrx/1fI9/qVlUlLAbbPGANqTxwAPMH09ZFZrvMtIh2rWc+ALrKdLcNTBOZKQOqhtASc8eQJwBycVD9G3fUVmvWlrdc7wm5W++QlONtraCVxdre4eLqryGT15+/smQxp/tRTf7663cLZcQY8C5JUFIgrHBbOOB5jPzJ/xUFsBB4rIM+dcCFqy2zdUSdPwy69IitBx55tGWkEn4Coef/zqCK7+RVHG1Dp+23ltDk60Qbi+zw0mVwBnr4sHHT0qA2KKLdrGW3bYUaA29fI8UtRgNqUIhrdWkEAcFQBPHU1Yd82LjEOxIsuO3+I+h5wJKABncMgj164+tQDs6SZ16hPd1sCm5N3dSeSgyF92wnP+khX2xQWmK9pSgUpSgUpSg4GtbQ/eLC81BITcI60SoSz+V9s7kfzIx9DVbaUvUn3qq26bgMIXc1KlRJdw3BMEED2hlCT8RQvPhSR156Vc5qqu0LTiLdIfmpPc2ic6HnXko3e7pnQP7fNpY8Lgx86gsS3rW1aErbkuXRxLZIdOxJfUPTACRk9PKoNatK3bWVzRfNfNFmK0rMKyBXgb/ecx8RPoevnx4a62ltVOzXnItzSGrygoa92s/AlHXvkq/Mgjnd0AASBk+KQ3x51y0Sm7fPYiS1gssSHAFJQ8eEjHmckDHr5HpVEb1rrFdskt6e0yyJmoZKcNMpGURk/41+QAHOP58VD9N+0PdjGrJs2QuRIluSXXHVnJUQhKev6a2nNBah0hHk3uwagRIlqjqXckTWQoP4BKtquSPMgdfU+VatulQ7R/+f1Ny3u7cntyGmAQSXHFLWAP+OtQaHZvNaialt0jWLcpp9+EiNZXXWwI3dEYABH5iCf9xzgkCpDoazQpMfVmg7s2HI8SaXGUYwUNOcoKT5EYBz6mo7eL9btQ9n1h0lZO8mag2RghLTav7KpOMqKsYHGQcZxnJ4qR6t98ab7RId3sVtcuUi6W5UZxhAwFOoIwpR8hjb1xwOooNPSN0i9mEq6af1I0lpB3S4twbQczEgfCf3vID1yPQqkmipGo7zbbpfL3Oct0Sekm3xkNpKojYGA5yDyRg4PB6+YAywLA9fbKgdoS4E2WxM79KWPCmN0/CJHUc8g9Qec9a3dV6lRZW9jfeJuKVhMSEG9wn54CUY/5PBSRkggjcEL1XLuQaasl+dgS1SWu9VfIQ2uogpI71S0JHGR4fCdpyeKmXZzAW3a3rtIYMd+6uB9LJGCwwlISy39mwPuTUL01YXNRXiUmSGlxjJD15eaA7pxxJ3IhtY4KEHxLP5lVcAGAABiqPaUpQKUpQKUpQKxvstyGVsvtocacSUrQsZCgeoIrJSgqnUekZdhU0/axMetsYlUZ6IrdMtfnhAP7Zn1bPzxXOtWqds22yr8pKrFZkrLU+A0441IkqTwpwEbkKCVKyFfmUcmrmwKjl20ZbZstc+Ep613FYwqXBVsLnycT8Lg/iBoN21XhmczFw4w8XIxfdcYWFNo6DGR8yf8Aaa8uJtl2sy4spnvo0yGp7uDlJW3gZ5HIPiHSoLI7PrjFfW4zGhPqcTtXKtcly2PqH7yEZaUfsnrXwLXqdiQyG5Wqo+1osBTsaBKSlBxkZCgceEflzQSzQarQnT9octttYgKmwg8llsZOAE5ys8qxuHJ5NdRV3YU3FdBDLEphTiJDpCQggA7VZ6HGT+k1XLdm1BaGYUBm56klCG33LSLfbY7SGxgZAdcxkcDnmvtjQt3uJbMq3N4CioOX65LmlBOScMN4a6k+eOaDWuurSi5LuunmmZjUlgRr2HgoQEOcIS53uMKx0O3OUY9OGnNP3PUb/tCJkwxVtht29vgoccbxjuoiFcto9XD4lc1M7boOA24w/en3bw+wcsokJSiOx/psJAQn64J+dS0AAYAAFBq2q2xLRAYgW6OiPFYTtbbQOAP/AGfn51t0pQKUpQKUpQKUpQKUpQKUpQK8xXtKDzFe0pQKUpQKUpQKUpQKUpQKUpQKUpQKUpQKUpQKUpQKUpQKUpQKUpQKUpQf/9k=">
+                <h1>Time Table</h1>
+                <button>EN</button>
+            </div>
+            <div class="nav2">
+                <h2>why Timegoing On</h2>
+                <h2>apps & intergration</h2>
+                <h2>Pricing</h2>
+                <h2>Support</h2>
+                <h2>Blog</h2>
+
+            </div>
+            <div class="nav3">
+                <button>LogIn</button>
+                <button>SingUp</button>
+            </div>
+
+        </div>
+
+        <div class="upper1">
+            <div class="uppart1">
+
+                <h1>Empower your Team With Time Tracking</h1>
+                <h2>TMetric streamlines your team work so you can focus on what matters</h2>
+                <input type="text" placeholder="enter your email address">
+                <div>
+                    <button>Get Started</button>
+                    <p>Fully Functional 30-Day Trial</p>
+                </div>
+            </div>
+            <div>
+                <img src="https://tmetric.com/media/nb3imgh0/img-home-heading.svg" alt="">
+            </div>
+        </div>
+    </div>
+
+    <!-- ******************* day-3***************** -->
+    <div class="upper2">
+        <img src="https://tmetric.com/media/zlalggkp/saasworthy_2021_main_page.png" alt="">
+        <img src="https://tmetric.com/media/w4mhgaul/time-tracking-software.png" alt="">
+        <img src="https://tmetric.com/media/mg3fi1e4/crozdesk_2022_main_page.png" alt="">
+        <img src="https://tmetric.com/media/c2eewysw/g2_2022_main_page.png" alt="">
+        <img src="https://tmetric.com/media/cwnfzugf/icon-capterra-shortlist.png" alt="">
+        <img src="https://tmetric.com/media/psxgf3r4/icon-software-advice-frontrunners.png" alt="">
+        <img src="https://tmetric.com/media/jfxavlps/getapp-logotype.svg" alt="">
+    </div>
+
+    <div class="upper3">
+        <h1>Best time tracking features for <br>your business </h1>
+
+    </div>
+
+
+
+
+    <div class="upper4">
+        <div>
+            <div><img src="https://tmetric.com/media/1kxfndjp/img-advantages.svg" alt=""></div>
+            <div>
+                <div class="part2">
+                    <div>
+                        <div>
+                            <img src="https://tmetric.com/media/2p4n4oyc/icon-timer-blue.svg" alt="">
+                        </div>
+                        <div>
+                            <h2> Time Tracking </h2>
+                            <h3>Capture every task you work on . Take control over time intervals by simple time
+                                tracking</h3>
+                            <h3 style="color: blue;"> Learn More -></h3>
+                        </div>
+
+
+                    </div>
+                    <div>
+                        <div>
+                            <img src="https://tmetric.com/media/1niddz51/icon-project-blue.svg" alt="">
+                        </div>
+                        <div>
+                            <h2>Project Management</h2>
+                        </div>
+                    </div>
+                    <div>
+                        <div>
+                            <img src="https://tmetric.com/media/2gxihhdu/icon-team-blue.svg" alt="">
+                        </div>
+                        <div>
+                            <h2>Team Management</h2>
+                        </div>
+                    </div>
+                    <div>
+                        <div>
+                            <img src="https://tmetric.com/media/s4koycnp/icon-invoice-blue.svg" alt="">
+                        </div>
+                        <div>
+                            <h2>Billing & Invoicing</h2>
+                        </div>
+                    </div>
+                    <div>
+                        <div>
+                            <img src="https://tmetric.com/media/yoblhiut/icon-reports-blue.svg" alt="">
+                        </div>
+                        <div>
+                            <h2>Reporting</h2>
+                        </div>
+                    </div>
+                    <div>
+                        <div>
+                            <img src="https://tmetric.com/media/cajpa4uy/icon-time-off-blue.svg" alt="">
+                        </div>
+                        <div>
+                            <h2>Time off</h2>
+                        </div>
+                    </div>
+
+
+                </div>
+
+            </div>
+        </div>
+
+
+    </div>
+
+
+    </div>
+
+
+
+    <!-- **********day-4******** -->
+
+    <div class="upper5">
+        <div><h1>Take effective control of working time</h1>
+        <h2>*   timekeeping </h2>
+        <h2>*   sites and apps monitoring </h2>
+        <h2>*   activity tracking </h2>
+        <h2>*   screenshots capturing </h2>
+        <h2>*   task management </h2>
+        <h2>*   50+ integrations </h2>
+        <h2>*   work schedule </h2>
+    <br>
+    <button class="btn">start Free Trial</button></div>
+        
+        
+        <div><img src="https://tmetric.com/media/kssowlxe/img-activity-cases.svg" alt=""></div>
+    </div>
+
+
+
+    
+    <div class="upper5">
+       
+        
+        
+        <div><img src="https://tmetric.com/media/lltfuaaz/img-report-cases-svg.svg" alt=""></div>
+
+        <div><h1>Achieve high profitability by using time tracker</h1>
+            <h2>*   project management </h2>
+            <h2>*   project budgeting </h2>
+            <h2>*   billing and invoicing </h2>
+            <h2>*   accurate payroll </h2>
+            <h2>*   detailed reports </h2>
+        <br>
+        <button class="btn">start Free Trial</button></div>
+    </div>
+
+
+    <div class="upper5">
+        <div><h1>Improve attendance with time off tracking software</h1>
+        <h2>*   flexible time off policy </h2>
+        <h2>*   time off requests management </h2>
+        <h2>*   time off calendar </h2>
+        <h2>*   pto calculations </h2>
+    <br>
+    <button class="btn">start Free Trial</button></div>
+        
+        
+        <div><img src="https://tmetric.com/media/mlzbtxv5/time-off-calendar-case.svg" alt=""></div>
+    </div>
+
+</body>
+
+</html>
+
+
+<script>
+
+</script>
