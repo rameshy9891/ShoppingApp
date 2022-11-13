@@ -1,0 +1,195 @@
+
+        .main {
+            background-color: peru;
+        }
+
+        .main>.nav {
+            display: flex;
+            justify-content: space-around
+        }
+
+        .nav>.nav1 {
+            display: flex;
+
+
+        }
+
+        .nav1>button {
+            width: 60px;
+            height: 40px;
+            margin-top: 25px;
+            background-color:peru ;
+        }
+        .nav1>button:hover{
+            background-color: white;
+            cursor: pointer;
+
+        }
+
+        .nav>.nav2 {
+            display: flex;
+
+        }
+
+        .nav>.nav3 {
+            display: flex;
+
+        }
+
+        .nav3>button {
+            width: 120px;
+            height: 60px;
+            font-size: 20px;
+            border-color: aqua;
+            background-color: blue;
+            color: white;
+            border-radius: 5px;
+        }
+        .nav3>.btn1{
+            background-color:peru ;
+            color: black;
+            border: none;
+            border-radius: 5px;
+        }
+        .nav3>.btn2{
+            background-color: peru;
+            border: 1px solid blue;
+            color: blue;
+        }
+
+        .nav3>.btn1:hover{
+           color: blue;
+        }
+        .nav3>.btn2:hover{
+            background-color: blue;
+            color: white;
+
+        }
+
+        .main>.upper1 {
+            display: flex;
+        }
+
+        .uppart1>input {
+            height: 30px;
+            width: 400px;
+        }
+
+        .uppart1>div>button {
+            height: 50px;
+            width: 150px;
+            background-color: blue;
+            color: aliceblue;
+            font-size: 20px;
+        }
+
+        .uppart1>div {
+            display: flex;
+
+        }
+
+        .uppart1>div>p {
+            margin-left: 20px;
+
+        }
+
+        .uppart1>h1 {
+            font-size: 70px;
+        }
+
+        /********day-3*******/
+        .upper2 {
+            display: flex;
+            justify-content: space-evenly;
+            margin-top: 25px;
+            box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+
+        }
+
+        .upper2>img:nth-child(7) {
+            width: 15%;
+        }
+
+        .upper3>h1 {
+            margin-top: 100px;
+            font-size: 50px;
+            text-align: center;
+            color: rgba(0, 0, 0, 0.836)
+        }
+
+        .upper4>div {
+            display: flex;
+        }
+
+        .part2>div {
+            display: flex;
+            margin-left: 20px;
+            margin-top: 15px;
+            box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+            width: 250px;
+            justify-content: space-evenly;
+            width: 300px;
+        }
+
+        /* ****** day-4*********** */
+
+        .upper5{
+            display: flex;
+            justify-content: space-evenly;
+        }
+        .upper5>div>h1{
+            font-size: 55px;
+        }
+        .upper5>div>.btn{
+            background-color: blue;
+            margin-left: 50px;
+            width: 200px;
+            height: 40px;
+            font-size: 20px;
+            color: aliceblue;
+        }
+
+/* **********day-5********* */
+
+.upper6>div{
+    text-align: center;
+
+}
+.upper6>div>h1{
+    font-size: 60px;
+    
+}
+.upper6>div>#onebutton{
+    text-align: center;
+    background-color: blue;
+    color: white;
+    width: 200px;
+    height: 40px;
+    font-size:20px ;
+}
+
+.upper6>div>#twobutton{
+    text-align: center;
+    background-color: white;
+    border: none;
+    color: rgb(76, 0, 255);
+    font-size: 20px;
+    
+}
+
+.upper7>div{
+    display: flex;
+    justify-content: space-around;
+
+}
+.upper7>div>img{
+    width: 144px;
+    height: 144px;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+.upper7>.part2{
+    display: flex;
+    justify-content: center;
+}
+
